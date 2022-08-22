@@ -1,0 +1,63 @@
+.about {
+  grid-template-rows: 2fr 1fr 9fr;
+
+  &__main {
+    grid-template-rows: 11fr 1fr;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas:
+      'info dp  xp'
+      'likes dp stack';
+    border-bottom: var(--border);
+  }
+
+  &__dp {
+    grid-area: dp;
+    background: url(../images/self_chair.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+    text-align: left;
+    border-bottom: var(--border);
+
+    span {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  &__likes {
+    grid-area: likes;
+  }
+
+  &__xp {
+    grid-area: xp;
+  }
+
+  &__xp {
+    grid-area: xp;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 1em;
+    border-right: none !important;
+    border-bottom: var(--border);
+  }
+
+  &__stack {
+    grid-area: stack;
+  }
+
+  &__icon {
+    background-color: var(--cl-dark);
+  }
+}

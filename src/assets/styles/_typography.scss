@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Bjorke';
+  src: url(../fonts/The_Bjorke.woff);
+}
+@font-face {
+  font-family: 'TT Wellingtons';
+  font-weight: 400;
+  src: url(../fonts/TTWellingtons-Regular.woff);
+}
+@font-face {
+  font-family: 'TT Wellingtons';
+  font-weight: 700;
+  src: url(../fonts/TTWellingtons-Bold.woff);
+}
+@font-face {
+  font-family: 'TT Jenevers';
+  font-weight: 700;
+  src: url(../fonts/TTJenevers-Bold.woff2);
+}
+
+h1 {
+  font-family: 'Bjorke';
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.15em;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'TT Wellingtons';
+  font-weight: 700;
+  line-height: 1.65;
+  color: var(--text-color);
+}
+
+.title {
+  margin-top: -1.25em;
+}
+
+.section__title {
+  font-family: 'TT Jenevers';
+  font-weight: 700;
+  font-size: 1.45em;
+  color: var(--text-color);
+  margin-bottom: -0.5em;
+}
+
+.section__lead {
+  font-size: 0.85em;
+  margin-bottom: 2em;
+}

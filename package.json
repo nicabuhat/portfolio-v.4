@@ -1,0 +1,25 @@
+{
+  "name": "01-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.pug --open",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Nicaela Cabuhat",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.6.2",
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2",
+    "pug": "^3.0.2"
+  },
+  "dependencies": {
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1"
+  }
+}

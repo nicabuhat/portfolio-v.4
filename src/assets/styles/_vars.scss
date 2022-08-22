@@ -1,0 +1,14 @@
+:root {
+  --cl-dark: #23211f;
+  --cl-light: #fcf5e5;
+  --border: 4px solid var(--cl-dark);
+}
+
+@mixin border-x {
+  border-left: var(--border);
+  border-right: var(--border);
+}
+@mixin border-y {
+  border-top: var(--border);
+  border-left: var(--border);
+}

@@ -1,0 +1,58 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+
+  border: var(--border);
+
+  &__type {
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: flex;
+    padding: 20px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+    background-image: url(../images/map_laguna.png);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    &__icon {
+      display: flex;
+      align-items: flex-end;
+      height: 3em;
+      width: 1.5em;
+      margin: 0 0.5em;
+    }
+    span {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  }
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @include border-x;
+  border-bottom: var(--border);
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+}

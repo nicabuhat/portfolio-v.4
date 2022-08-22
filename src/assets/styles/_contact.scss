@@ -1,0 +1,103 @@
+.contact {
+  grid-template-rows: 2fr 1fr 9fr;
+  &__main {
+    grid-template-columns: 3fr 5fr 4fr;
+    grid-template-rows: 8fr 2fr 2fr;
+    grid-template-areas:
+      'dp  info  form'
+      'dp  email form'
+      'dp  social form';
+    border-bottom: var(--border);
+  }
+
+  &__dp {
+    grid-area: dp;
+    background-image: url(../images/self_crosslegs.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  &__form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__social {
+    grid-area: social;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em;
+    border-bottom: var(--border);
+  }
+
+  &__email {
+    grid-area: email;
+    border-bottom: var(--border);
+
+    .icon {
+      width: 1em;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.social {
+  &__link {
+    display: block;
+    width: 18px;
+    height: 100%;
+
+    &:nth-child(even) {
+      margin: 0 1em;
+    }
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.input {
+  max-width: 700px;
+  width: 100%;
+  height: 1em;
+  margin: 0.5em 0;
+  padding: 1em 0.5em;
+  border: var(--border);
+  background-color: transparent;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+.textarea {
+  height: 5em;
+  resize: none;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  border: var(--border);
+  font-weight: 700;
+  background-color: var(--cl-dark);
+  color: var(--cl-light);
+  font-size: 0.85em;
+}

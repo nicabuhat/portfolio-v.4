@@ -1,0 +1,40 @@
+extends views/templates/layout.pug 
+
+block content 
+    .container
+        .grid.contact
+            include views/includes/header.pug
+            main.main.contact__main.row
+                .col.contact__dp
+
+                .col.contact__info  
+                    h2.section__title Let's Talk
+                    p.section__lead We can discuss how you can improve your business presence .  I am always open to discuss your projects and  help you with your website design and web development needs.
+                .col.contact__email 
+                    .icon#icon_email
+                    a(href="") cabuhat.nicaela@gmail.com 
+                .col.contact__social 
+                    a.social__link(href="") 
+                        .icon#icon_github
+                    a.social__link(href="")  
+                        .icon#icon_heroku
+                    a.social__link(href="") 
+                        .icon#icon_netlify
+                    a.social__link(href="") 
+                        .icon#icon_twitter
+                    a.social__link(href="") 
+                        .icon#icon_discord 
+
+                .col.contact__form 
+                    h3.section__subtitle Get in Touch
+                    form.form 
+                        input.input(type="text" placeholder="Name")
+                        input.input(type="email" placeholder="Email")
+                        textarea.input.textarea(name="" cols="30" rows="10" placeholder="Message")
+                        button.btn Send Message
+
+
+
+
+
+

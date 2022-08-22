@@ -1,0 +1,44 @@
+.index {
+  grid-template-rows: 2fr 1fr 9fr;
+
+  &__main {
+    border-bottom: var(--border);
+  }
+}
+
+.hero-square {
+  background: url(../images/hero_square.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.hero-waves {
+  background: url(../images/hero_waves.png);
+  height: 100%;
+  width: 100%;
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hero-waves-2 {
+  background: url(../images/hero_waves--02.png);
+  height: 100%;
+  width: 100%;
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hero-dp {
+  background: url(../images/hero_dp.png);
+  height: 100%;
+  width: 100%;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  border: var(--border);
+}
